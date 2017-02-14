@@ -15,4 +15,4 @@ Proposed technologies and techniques:
 * CSS grids / flex box
 * [Fluid typography](https://www.smashingmagazine.com/2016/05/fluid-typography/)
 * SVG icon sprites
-* Accessability?
+* Accessibility?
