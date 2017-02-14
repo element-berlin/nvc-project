@@ -1,0 +1,23 @@
+{
+  "name": "nvc-project",
+  "version": "0.0.1",
+  "description": "Example project to implement a \"needs meter\" to measure needs as in [Nonviolent Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/element-berlin/nvc-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/element-berlin/nvc-project/issues"
+  },
+  "homepage": "https://github.com/element-berlin/nvc-project#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
