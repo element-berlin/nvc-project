@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello Element</title>
+  <title>element nvc-project spike</title>
 </head>
 
 <body>
-  <h1>Hello Element</h1>
-  <p>Hello, <%= name %></p>
+  <form action="/need" method="post">
+    <div>
+      <label>
+        Name:<br>
+        <input type="text" name="name">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Description:<br>
+        <textarea name="description">
+        </textarea>
+      </label>
+    </div>
+
+    <div>
+      <input type="submit" value="Save"/>
+    </div>
+  </form>
 </body>
 </html>
