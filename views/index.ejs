@@ -5,6 +5,18 @@
 </head>
 
 <body>
+
+  <%- include('header') -%>
+
+  <h1>Needs</h1>
+  <ul>
+    <% needs.forEach(function(need) { %>
+      <li>
+        <%= `${need.name}: ${need.description} (${need._id.getTimestamp().toLocaleDateString()})` %>
+      </li>
+    <% }); %>
+  </ul>
+
   <form action="/need" method="post">
     <div>
       <label>

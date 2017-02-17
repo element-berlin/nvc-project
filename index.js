@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 
 const db = require('./db');
 
+const client = db();
+
+
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const port = process.env.PORT || 8080;
@@ -11,7 +14,11 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res) {
-  res.render('index.ejs');
+  db.Need.all().then(function(needs) {
+    res.render('index.ejs', {
+      needs
+    });
+  });
 });
 
 app.post('/need', function(req, res) {
@@ -20,7 +27,8 @@ app.post('/need', function(req, res) {
     description: req.body.description.trim(),
   };
 
-  console.log(need);
+  db.Need.create(need).then(function(result) {
+  });
 
   res.redirect('back');
 });
