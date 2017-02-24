@@ -9,6 +9,7 @@ Proposed technologies and techniques:
 * [Yarn](https://yarnpkg.com/lang/en/) for package management
 * Node.js framework (like [Sails.js](http://sailsjs.com/)) or just Express?
 * Heroku for hosting
+* [Deploying via Docker on Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 * Frontend tooling with Grunt, Gulp or Webpack?
 * [PostCSS](http://postcss.org/) CSS preprocessor
 * [BEM](http://getbem.com/) CSS methodology
@@ -16,3 +17,4 @@ Proposed technologies and techniques:
 * [Fluid typography](https://www.smashingmagazine.com/2016/05/fluid-typography/)
 * SVG icon sprites
 * Accessibility?
+* Continuous integration with [Wercker](http://www.wercker.com/), TravisCI?
